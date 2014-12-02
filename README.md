@@ -1,4 +1,4 @@
 dotvim
 ======
 
-vim config
+My VIM configuration

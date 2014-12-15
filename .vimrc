@@ -1,6 +1,7 @@
 set autoindent
 set expandtab
 set shiftwidth=4 softtabstop=4
+syntax on
 
 " navigation between split windows
 nmap <silent> <c-k> :wincmd k<CR>

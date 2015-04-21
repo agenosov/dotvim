@@ -9,6 +9,11 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" tabs navigation
+let g:lasttab = 1
+nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
 autocmd BufNewFile,BufRead *.cpp set formatprg=astyle\ -s4pA1
 autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -s4pA1
 autocmd BufNewFile,BufRead *.cxx set formatprg=astyle\ -s4pA1

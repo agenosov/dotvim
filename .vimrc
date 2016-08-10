@@ -43,3 +43,5 @@ set omnifunc=syntaxcomplete#Complete
 
 " Specify tags file
 set tags=./tags,tags;$HOME
+" Navigation tricks for using CTags
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>

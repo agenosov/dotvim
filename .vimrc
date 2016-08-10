@@ -40,3 +40,6 @@ let g:nerdtree_tabs_open_on_console_startup=1
 
 " Enable code completion
 set omnifunc=syntaxcomplete#Complete
+
+" Specify tags file
+set tags=./tags,tags;$HOME

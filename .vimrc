@@ -24,8 +24,8 @@ autocmd BufNewFile,BufRead *.hpp set formatprg=astyle\ -s4pA1
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%>100v.\+/
 
-" TODO: configure path to use gf command
-" let &path.="/usr/include/sys"
+" configure path to use gf command
+let &path.="/usr/include/sys,/usr/include/AL"
 
 " Runtime path manipulation by pathogen.vim
 execute pathogen#infect()
